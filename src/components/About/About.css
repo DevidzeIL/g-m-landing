@@ -1,0 +1,36 @@
+.page-about {
+  display: flex;
+  margin-left: 11.5rem;
+  flex-direction: column;
+  width: 62rem;
+  align-items: center;
+}
+
+.page-about h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+
+  text-align: right;
+  letter-spacing: -0.05em;
+
+  color: var(--black-color);
+}
+
+.page-about h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.05em;
+
+  color: var(--grey-color);
+}
+
+.page-about span {
+  color: var(---black-color);
+}

@@ -1,0 +1,28 @@
+.page-hero {
+  display: flex;
+  margin-left: 10rem;
+  flex-direction: column;
+  width: 44rem;
+}
+
+.page-hero h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  letter-spacing: -0.05em;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.page-hero h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.05em;
+
+  color: var(--grey-color);
+}
