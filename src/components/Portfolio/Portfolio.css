@@ -1,0 +1,15 @@
+.page-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.page-portfolio h1 {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+
+  text-align: right;
+  letter-spacing: -0.05em;
+
+  color: var(--black);
+}
