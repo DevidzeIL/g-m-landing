@@ -1,0 +1,70 @@
+.page-team {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-team h1 {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  letter-spacing: -0.05em;
+  margin: 0;
+
+  color: var(--primary);
+}
+
+.page-team h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.05em;
+
+  color: var(--grey);
+}
+
+.team-title {
+  width: 36.5rem;
+  height: 23rem;
+  margin-left: 10rem;
+  padding-right: 4rem;
+}
+
+.team-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  row-gap: 7rem;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 2rem;
+  height: 25rem;
+  width: 25rem;
+
+  background: var(--primary);
+  border-radius: 24px;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.05em;
+
+  color: var(--white);
+}
+
+.member-role {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+
+  color: var(--secondary);
+}
