@@ -1,4 +1,4 @@
-import './index.css';
+import './Footer.css';
 
 const CONTACT_MAILTO = 'guysandmary@gmail.com';
 const CONTACT_TEL = '+1 (747)-327-7247';

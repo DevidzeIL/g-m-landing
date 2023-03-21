@@ -3,10 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 10rem;
 }
 
 .logo-link {
@@ -19,7 +16,7 @@
   font-weight: 600;
 
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .page-nav {
@@ -38,5 +35,5 @@
 
 .page-nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary);
 }

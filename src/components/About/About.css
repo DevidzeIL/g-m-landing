@@ -7,8 +7,6 @@
 }
 
 .page-about h1 {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
   font-size: 96px;
   line-height: 117px;
@@ -16,21 +14,19 @@
   text-align: right;
   letter-spacing: -0.05em;
 
-  color: var(--black-color);
+  color: var(--black);
 }
 
 .page-about h3 {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
   letter-spacing: -0.05em;
 
-  color: var(--grey-color);
+  color: var(--grey);
 }
 
 .page-about span {
-  color: var(---black-color);
+  color: var(---black);
 }

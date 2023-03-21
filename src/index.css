@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 :root {
-  --primary-color: #6224e7;
-  --secondary-color: #fbf9ff;
-  --black-color: #000013;
-  --grey-color: #8d8d8d;
-  --white-color: #ffffff;
+  --primary: #6224e7;
+  --secondary: #fbf9ff;
+  --black: #000013;
+  --grey: #8d8d8d;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', serif;
-  background: var(--secondary-color);
+  background: var(--secondary);
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   margin: auto;
+  gap: 10rem;
 }
