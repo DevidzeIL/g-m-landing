@@ -26,7 +26,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='page-portfolio'>
+    <div className='page-portfolio' id='portfolio'>
       <div className='filters'>
         {filterButtons.map(({ id, label }, index) => (
           <button
