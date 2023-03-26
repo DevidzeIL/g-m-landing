@@ -27,50 +27,57 @@ const Portfolio = () => {
 
   return (
     <div className='page-portfolio' id='portfolio'>
-      <div className='filters'>
-        {filterButtons.map(({ id, label }, index) => (
+      <div className='portfolio-title'>
+        <h1>Portfolio</h1>
+      </div>
+      <div className='portfolio-body'>
+        <div className='filters'>
+          {filterButtons.map(({ id, label }, index) => (
+            <button
+              key={id}
+              className={
+                id === activeFilter
+                  ? 'portfolio-button portfolio-button-active'
+                  : 'portfolio-button'
+              }
+              onClick={() => handleFilterClick(id, 0)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className='portfolio-items'>
+          {slicedItems.map((item, index) => (
+            <PortfolioItem
+              key={item.id}
+              item={filteredItems.find((filteredItem) => filteredItem.id === item.id)}
+            />
+          ))}
+        </div>
+        <div className='portfolio-pagination'>
           <button
-            key={id}
+            disabled={activeIndex === 0}
             className={
-              id === activeFilter ? 'portfolio-button portfolio-button-active' : 'portfolio-button'
+              activeIndex === 0
+                ? 'portfolio-button-nav portfolio-button-nav-disabled'
+                : 'portfolio-button-nav'
             }
-            onClick={() => handleFilterClick(id, 0)}
+            onClick={() => handleFilterClick(activeFilter, activeIndex - 3)}
           >
-            {label}
+            <img className='portfolio-button-icon' src={prev} alt='' />
           </button>
-        ))}
-      </div>
-      <div className='portfolio-items'>
-        {slicedItems.map((item, index) => (
-          <PortfolioItem
-            key={item.id}
-            item={filteredItems.find((filteredItem) => filteredItem.id === item.id)}
-          />
-        ))}
-      </div>
-      <div className='portfolio-pagination'>
-        <button
-          disabled={activeIndex === 0}
-          className={
-            activeIndex === 0
-              ? 'portfolio-button-nav portfolio-button-nav-disabled'
-              : 'portfolio-button-nav'
-          }
-          onClick={() => handleFilterClick(activeFilter, activeIndex - 3)}
-        >
-          <img className='portfolio-button-icon' src={prev} alt='' />
-        </button>
-        <button
-          disabled={activeIndex + 3 >= filteredItems.length}
-          className={
-            activeIndex + 3 >= filteredItems.length
-              ? 'portfolio-button-nav portfolio-button-nav-disabled'
-              : 'portfolio-button-nav'
-          }
-          onClick={() => handleFilterClick(activeFilter, activeIndex + 3)}
-        >
-          <img className='portfolio-button-icon' src={next} alt='' />
-        </button>
+          <button
+            disabled={activeIndex + 3 >= filteredItems.length}
+            className={
+              activeIndex + 3 >= filteredItems.length
+                ? 'portfolio-button-nav portfolio-button-nav-disabled'
+                : 'portfolio-button-nav'
+            }
+            onClick={() => handleFilterClick(activeFilter, activeIndex + 3)}
+          >
+            <img className='portfolio-button-icon' src={next} alt='' />
+          </button>
+        </div>
       </div>
     </div>
   );

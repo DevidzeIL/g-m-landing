@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 100px;
 }
 
 .page-portfolio button {
@@ -22,6 +21,17 @@
   letter-spacing: -0.05em;
 
   color: var(--black);
+}
+
+.portfolio-title {
+}
+
+.portfolio-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
 }
 
 .portfolio-button {
