@@ -23,9 +23,6 @@
   color: var(--black);
 }
 
-.portfolio-title {
-}
-
 .portfolio-body {
   display: flex;
   flex-direction: column;

@@ -27,7 +27,7 @@ const Portfolio = () => {
 
   return (
     <div className='page-portfolio' id='portfolio'>
-      <div className='portfolio-title'>
+      <div>
         <h1>Portfolio</h1>
       </div>
       <div className='portfolio-body'>
