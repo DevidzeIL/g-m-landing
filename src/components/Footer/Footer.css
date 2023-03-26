@@ -1,9 +1,6 @@
 .page-footer {
   padding: 2rem 10rem;
 
-  background-color: black;
-  color: white;
-
   font-size: 16px;
   font-weight: 300;
 }
@@ -20,7 +17,6 @@
 
 .page-footer a {
   text-decoration: none;
-  color: white;
 }
 
 .page-footer .footer-copyright {
